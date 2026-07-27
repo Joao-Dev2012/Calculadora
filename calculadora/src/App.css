@@ -1,0 +1,79 @@
+@font-face {
+  font-family: "Digital";
+  src: url("/fonts/digital-7.ttf") format("truetype");
+}
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: "Digital";
+
+  min-height: 100dvh;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+
+  background:
+  radial-gradient(circle at top left, rgb(255, 100, 44) , transparent 30%),
+  radial-gradient(circle at bottom right, rgb(15, 165, 15) , transparent 30%),
+  linear-gradient(rgb(44, 39, 39));
+
+}
+
+
+.botoes{
+    display: grid;
+    grid-template-columns: repeat(4,70px);
+    gap: 20px;
+    padding: 20px;
+
+    background: rgb(66, 65, 65);
+    border-left: 5px solid white;
+    border-bottom: 5px solid white;
+    border-right: 5px solid white;
+
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+    box-shadow: 17px 17px 15px;
+}
+
+.calcular{
+  background: green;
+}
+
+.virgula{
+  font-size: 70px;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+}
+
+
+button{
+  background: orangered;
+  color: whitesmoke;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 70px;
+    height: 70px;
+
+    border-radius: 10px;
+    font-size: 25px;
+    box-shadow: 2px 3px 10px 0px black;
+
+    cursor: pointer;
+
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+button:hover{
+  opacity: 0.5;
+}
